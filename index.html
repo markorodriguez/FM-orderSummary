@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="relative">
+  <div id="container" class="bg-white rounded-2xl w-96 mx-auto text-center overflow-auto shadow-2xl">
+    <img src="./images/illustration-hero.svg" alt="hero_illustration" >
+    
+
+    <div class="p-5  " id="content">
+      <h1 class="my-5 text-base sm:text-2xl font-black dark-title">Order Summary</h1>
+
+      <p class="my-6 text-gray-400">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p> 
+        <div id="price" class="rounded-2xl w-80 mx-auto">
+          <div class="grid grid-rows-1 grid-cols-3 gap-2 pt-4">
+            <div class="row-span-3" >
+              <img class="mx-auto" src="./images/icon-music.svg" alt="music">
+            </div>
+            <div class="col-span-1 text-left -ml-4" >
+              <span class="font-bold dark-title"> Annual plan  </span><br>
+              <span class="text-gray-400">$59.99/year</span> 
+            </div>
+            <div class="col-span-1 pt-3 attribution">
+              <a class="font-semibold text-sm underline" href="#">Change</a> 
+            </div>
+          </div>
+
+        </div>
+        <div class="mt-7 ">
+          <button class="text-white w-80 mx-auto rounded-lg h-10 font-semibold  shadow-2xl">Proceed to Payment</button> <br>
+          <button class="text-gray-400 w-80 font-semibold   mx-auto mt-5"> Cancel Order</button>
+          
+        </div>
+       
+      </div>
+    </div>
+    
+    
+ 
+  
+  <div class="attribution absolute inset-x-0 bottom-0 mx-auto">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marko</a>.
+  </div>
+</body>
+</html>
